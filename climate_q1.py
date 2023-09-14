@@ -12,6 +12,7 @@ co2 = cursor.fetchall()
 cursor.execute("SELECT Temperature from ClimateData")
 temp = cursor.fetchall()
 
+connection.close()
 
 plt.subplot(2, 1, 1)
 plt.plot(years, co2, 'b--') 
